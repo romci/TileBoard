@@ -1147,7 +1147,7 @@ angular-moment@^1.3.0:
   dependencies:
     moment ">=2.8.0 <3.0.0"
 
-angular@1.x, angular@>=1.2.0, angular@^1.8.2:
+angular@1.x, angular@>=1.2.0, angular@^1.4.5, angular@^1.8.2:
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.8.2.tgz#5983bbb5a9fa63e213cb7749199e0d352de3a2f1"
   integrity sha512-IauMOej2xEe7/7Ennahkbb5qd/HFADiNuLSESz9Q27inmi32zB0lnAsFeLEWcox3Gd1F6YhNd1CP7/9IukJ0Gw==
@@ -4385,6 +4385,13 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
+
+ngtouch@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ngtouch/-/ngtouch-1.0.1.tgz#48c5f9f874bd3340164d82e9b0b301a892d3db06"
+  integrity sha1-SMX5+HS9M0AWTYLpsLMBqJLT2wY=
+  dependencies:
+    angular "^1.4.5"
 
 node-gyp@^7.1.0:
   version "7.1.2"

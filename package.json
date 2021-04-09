@@ -76,6 +76,7 @@
     "chart.js": "^2.9.4",
     "hls.js": "^0.14.17",
     "lodash.mergewith": "^4.6.2",
+    "ngtouch": "^1.0.1",
     "node-sass": "^5.0.0"
   },
   "resolutions": {

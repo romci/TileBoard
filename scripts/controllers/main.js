@@ -100,6 +100,10 @@ App.controller('Main', function ($scope, $timeout, $location, Api) {
          return callFunction(item.secondaryAction, [item, entity]);
       }
 
+      if (CONFIG.secondaryActionEnabled === false) {
+         return;
+      }
+
       if (item.history || entity && entity.entity_id) {
          return $scope.openPopupHistory(item, entity);
       }
@@ -295,8 +299,7 @@ App.controller('Main', function ($scope, $timeout, $location, Api) {
             }
          }
 
-         if ((CONFIG.transition === TRANSITIONS.ANIMATED || CONFIG.transition === TRANSITIONS.ANIMATED_GPU)
-             && index > 0 && !$scope.isMenuOnTheLeft) {
+         if ((CONFIG.transition === TRANSITIONS.ANIMATED || CONFIG.transition === TRANSITIONS.ANIMATED_GPU) && index > 0 && !$scope.isMenuOnTheLeft) {
             styles.position = 'absolute';
             styles.left = (index * 100) + '%';
             styles.top = '0';
@@ -1745,6 +1748,10 @@ App.controller('Main', function ($scope, $timeout, $location, Api) {
          return;
       }
 
+      if (CONFIG.panEnabled === false) {
+         return false;
+      }
+
       // Workaround for touch events - cancel recognition on scroll event.
       if (event && event.pointerType === 'touch') {
          if (event.isFirst) {
@@ -1758,6 +1765,10 @@ App.controller('Main', function ($scope, $timeout, $location, Api) {
    };
 
    $scope.onPagePan = function (event) {
+      if (CONFIG.panEnabled === false) {
+         return false;
+      }
+
       if (event.eventType & (Hammer.INPUT_END | Hammer.INPUT_CANCEL)) {
          // Re-enable transitions.
          $scope.pagesContainerStyles.transition = null;

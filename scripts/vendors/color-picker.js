@@ -376,8 +376,8 @@ colorPicker.directive('colorPicker', ['$document', '$compile', 'ColorHelper', fu
                         //'       <input text type="text" action="setColorFromHex(string)" ng-model="hexText"/>' +
                         //'       <div>HEX</div>' +
                         //'   </div>' +
-                        // '   <div ng-click="typePolicy()" class="type-policy"></div>' +
-                        '   <button type="button" class="{{cancelButtonClass}}" ng-show="showCancelButton" ng-click="cancelColor()">Cancel</button>' +
+                        // '   <div ng-touchend="typePolicy()" class="type-policy"></div>' +
+                        '   <button type="button" class="{{cancelButtonClass}}" ng-show="showCancelButton" ng-touchend="cancelColor()">Cancel</button>' +
                         '</div>');
 
                 document.getElementsByTagName("body")[0].appendChild(template[0]);

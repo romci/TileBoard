@@ -1,0 +1,72 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+	position: fixed;
+}
+
+.page, .pages {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+	position: fixed;
+}
+
+.media-player-table {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.item-button:active {
+    outline: 2px solid white;
+}
+
+.pages-menu--item {
+font-size: 64px;
+margin: 5px 10px;
+}
+
+.item-button {
+    font-size: 1.2em;
+	background-color: rgba(0,0,0,0.2);
+}
+
+.item-button:active {
+    background: rgba(255,255,255,.2);
+}
+
+.item-select--option {
+    padding: 15px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.pages-menu {
+	z-index: 3;
+}
+
+.header {
+	bottom: 0;
+	top: auto;
+	min-height: 80px;
+}
+
+.header-content {
+	position: relative;
+	min-height: 80px;
+}
+
+.header--left {
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+}
+
+.header--right {
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+}
